@@ -3,3 +3,9 @@ var randomNumber = () => {
 }
 randomNumber();
 
+console.log(randomNumber());
+console.log(randomNumber());
+console.log(randomNumber());
+console.log(randomNumber());
+console.log(randomNumber());
+console.log(randomNumber());

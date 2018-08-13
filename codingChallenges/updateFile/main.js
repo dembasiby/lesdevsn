@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const updateFile = (filePath) => {
-  const regexp = /console\..+[\n|$]/g;
+  const regexp = /console\.\w+\(.*\);?\n?/g;
   
   fs.readFile(filePath, 'utf8', (error, content) => {
     if (error) throw error;

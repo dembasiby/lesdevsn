@@ -12,7 +12,7 @@ const updateFile = (filePath) => {
       fs.writeFile(filePath, nContent, (err) => {
         if (err) throw err;
         console.log('The content of the file has been updated!');
-      })
+      });
     }
   });
 };
@@ -22,7 +22,7 @@ const walkFolder = (folder) => {
     files.forEach(file => {
       let nPath = folder + '/' + file;
 
-      fs.stat(nPath, function(err, stats) {
+      fs.stat(nPath, (err, stats) => {
         if (err) { throw err;}
 
         if (stats.isDirectory()) {

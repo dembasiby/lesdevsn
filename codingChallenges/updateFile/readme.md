@@ -21,7 +21,7 @@ For example:
         }
 
       });
-  </code></pre>}
+  </code></pre>
 
 would become
 
